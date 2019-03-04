@@ -3,47 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1736a036-f9c9-4403-99bd-7fea7e282f76" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/animated_favicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/animated_favicon.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/apple-touch-icon-114x114.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon-114x114.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/apple-touch-icon-120x120.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon-120x120.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/apple-touch-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon-144x144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/apple-touch-icon-60x60.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon-60x60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/apple-touch-icon-76x76.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon-76x76.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/browserconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/favicon-144.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/favicon-144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/favicon-196.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/favicon-196.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/favicon-32.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/favicon-32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/favicon-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/favicon-64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/favicon-96.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/favicon-96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/largetile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/largetile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/lisezmoi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/lisezmoi.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/mediumtile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/mediumtile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/smalltile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/smalltile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/arrowsheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/arrowsheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/asteroid-102-109-31.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/asteroid-102-109-31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/asteroid-99-108-32.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/asteroid-99-108-32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bgrass.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bgrass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bmontagne.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bmontagne.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boutonjaune.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/boutonjaune.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boutonorange.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/boutonorange.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boutonretour.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/boutonretour.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boutonvert.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/boutonvert.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bsky.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bsky.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/echapsheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/echapsheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/explosion.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/explosion.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/favicon-noir.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/favicon-noir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/missile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/missile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/panel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/play-pause.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/play-pause.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ship.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ship.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/spacesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/spacesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/phaser.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/phaser.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/phaser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/phaser.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phaser.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/phaser.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phaser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/phaser.min.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,47 +29,88 @@
           <entry key="HTML" value="6" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="LICENSE" value="1" />
+          <entry key="firebaserc" value="1" />
+          <entry key="gitattributes" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="png" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="1" />
+          <entry key="PLAIN_TEXT" value="5" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="-84">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/phaser.map">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.firebaserc">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-61">
-              <caret line="364" selection-start-line="364" selection-end-line="364" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/phaser.min.js">
+        <entry file="file://$PROJECT_DIR$/public/phaser.map">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+              <caret column="75" selection-start-column="75" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="50" column="87" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitattributes">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/favicon/mediumtile.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/favicon/lisezmoi.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/phaser.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -126,8 +130,8 @@
       <find>playmMedium</find>
       <find>./</find>
       <find>%PUBLIC_URL%/</find>
-      <find>js</find>
       <find>/js/</find>
+      <find>js</find>
     </findStrings>
     <replaceStrings>
       <replace>./</replace>
@@ -141,6 +145,7 @@
       <list>
         <option value="$PROJECT_DIR$/js/game.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/phaser.map" />
         <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
@@ -169,16 +174,6 @@
             <path>
               <item name="space-attack" type="b2602c69:ProjectViewProjectNode" />
               <item name="space-attack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space-attack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="space-attack" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="space-attack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="space-attack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,11 +223,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3299000" />
+    <option name="totallyTimeSpent" value="3841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24642289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -246,7 +240,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.0051020407" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.44557822" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -261,27 +255,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/phaser.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/phaser.map">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -299,19 +272,63 @@
     <entry file="file://$PROJECT_DIR$/public/404.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon/mediumtile.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon/lisezmoi.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phaser.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="364" selection-start-line="364" selection-end-line="364" />
+        <state relative-caret-position="100">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="50" column="87" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phaser.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="75" selection-start-column="75" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="-84">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.firebaserc">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

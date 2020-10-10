@@ -220,7 +220,7 @@ function menu() {
 
   //description text of the purpose of the game
   description = game.add.text((screenWidth / 2 - 320), 250, "Get the highest score by destroying the most asteroids", style4);
-  description2 = game.add.text((screenWidth / 2 - 320), 275, "There are endless of them and if they hit you you lose", style4);
+  description2 = game.add.text((screenWidth / 2 - 320), 275, "There are endless of them and if they hit you, you lose", style4);
 
 
   //the animated keys of the menu

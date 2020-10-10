@@ -2,43 +2,43 @@ window.addEventListener("scroll", function (e) {
   window.scrollTo(0, 0);
 }, false);
 
-<!-- variable size for the canvas -->
+// variable size for the canvas 
 var screenWidth = 1200,
   screenHeight = 700;
 
-<!--instantiation of the game with the functions preload,create,update-->
+//instantiation of the game with the functions preload,create,update
 var game = new Phaser.Game(screenWidth, screenHeight, Phaser.AUTO, null, {
   preload: preload,
   create: create,
   update: update
 });
 
-<!--all global variables (not very clean) -->
+//all global variables (not very clean) 
 
 var playerScore = 0;
-<!-- player's scoreText value -->
+// player's scoreText value 
 var scoreText;
-<!--player scoreText text -->
+//player scoreText text 
 
 var gameSpeed = 5;
 var paused = true;
 var play;
-<!--we launched the game-->
+//we launched the game
 
 var missileSpeed = 3;
 var nbMissiles = 0;
 var canLaunchMissile = true;
 var missiles = [];
-<!--array of missiles to instantiate as many as you want-->
+//array of missiles to instantiate as many as you want
 var timeoutMissile = 1200;
-<!--minimum time between each missile launch-->
+//minimum time between each missile launch
 
 var asteroidL = [];
-<!--asteroid array with animation left to instantiate as much as you want-->
+//asteroid array with animation left to instantiate as much as you want
 var asteroidR = [];
-<!--asteroid array with animation right to instantiate as much as you want-->
+//asteroid array with animation right to instantiate as much as you want
 var nbAsteroids = 0;
-<!-- number of asteroids defined according to the level of difficulty in the menu -->
+// number of asteroids defined according to the level of difficulty in the menu 
 
 var ship;
 var isShipDestroyed = false;
@@ -47,10 +47,10 @@ var explosion;
 
 function preload() {
 
-  <!--preloading all images-->
+  //preloading all images
   game.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
   game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-  <!-- SHOW_ALL exact_fit-->
+  // SHOW_ALL exact_fit
   game.scale.pageAlignHorizontally = true;
   game.scale.pageAlignVertically = true;
   game.load.image("background", './images/bsky.png');
@@ -73,22 +73,22 @@ function preload() {
 
 function create() {
 
-  <!--the physics of the game is phaser arcade physics-->
+  //the physics of the game is phaser arcade physics
   game.physics.startSystem(Phaser.Physics.ARCADE);
 
-  <!--all imputs are defined by variables-->
+  //all imputs are defined by variables
   upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP);
   downKey = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
   rightKey = game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
   leftKey = game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
   space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
-  <!--adding backgrounds-->
+  //adding backgrounds
   background = game.add.sprite(0, 0, 'background');
   montagne = game.add.sprite(0, 0, 'montagne');
   grass = game.add.sprite(0, 0, 'grass');
 
-  <!--adding 2 spacecraft at the same positions to have 2 collision zones (only rectangular)-->
+  //adding 2 spacecraft at the same positions to have 2 collision zones (only rectangular)
   ship = game.add.sprite((screenWidth / 10), (screenHeight / 2 - 50), 'ship');
   ship.frame = 0;
   ship.animations.add('moteur', [0, 1, 2], 10, true);
@@ -107,7 +107,7 @@ function create() {
   ship2.body.setSize(50, 25, 60, 30);
 
 
-  <!--the 3 explosions outside the screen that we add to the top of the ship if he dies-->
+  //the 3 explosions outside the screen that we add to the top of the ship if he dies
   explosion1 = game.add.sprite((screenWidth), 0, 'explosion');
 
   explosion1.frame = 0;
@@ -130,15 +130,15 @@ function create() {
   explosion3.scale.setTo(0.60, 0.60);
 
 
-  <!--we allow shooting all timemissile-->
+  //we allow shooting all timemissile
   game.time.events.loop(timeoutMissile, setMissile, this);
 
-  <!--the missile group / class is created and added to physics for collisions-->
+  //the missile group / class is created and added to physics for collisions
   missiles = game.add.group();
   missiles.enableBody = true;
   missiles.physicsBodyType = Phaser.Physics.ARCADE;
 
-  <!--if a key is released we look at which one and either we pause or create a missile-->
+  //if a key is released we look at which one and either we pause or create a missile
   game.input.keyboard.onUpCallback = function (e) {
 
     if (e.keyCode == 27 && panel.visible == false) {
@@ -166,14 +166,14 @@ function create() {
   };
 
 
-  <!--single explosion that we will move to the location of the collision of a missile and an asteroid-->
+  //single explosion that we will move to the location of the collision of a missile and an asteroid
   explosion = game.add.sprite((screenWidth), 0, 'explosion');
   explosion.frame = 0;
   explosion.animations.add('explose', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 20, false);
   explosion.animations.play('explose');
   explosion.scale.setTo(0.45, 0.45);
 
-  <!-- creative function of the game start menu -->
+  // creative function of the game start menu 
   menu();
 }
 
@@ -198,11 +198,11 @@ function menu() {
     fill: "#ffffff"
   };
 
-  <!--space attack / game title-->
+  //space attack / game title
   title = game.add.text((screenWidth / 2 - 140), 80, "Space Attack", style2);
   title.setShadow(3, 3, 'rgba(0,0,0,0.5)', 5);
 
-  <!--three difficulty buttons-->
+  //three difficulty buttons
   playEasy = game.add.button((screenWidth / 2 - 330), 150, 'boutonvert', playEasy, this, 2, 1, 0);
 
   playMedium = game.add.button((screenWidth / 2 - 95), 150, 'boutonjaune', playmMedium, this, 2, 1, 0);
@@ -210,7 +210,7 @@ function menu() {
   playHard = game.add.button((screenWidth / 2 + 140), 150, 'boutonorange', playHard, this, 2, 1, 0);
 
 
-  <!--three texts of difficulty buttons-->
+  //three texts of difficulty buttons
   easy = game.add.text((screenWidth / 2 - 265), 155, "Easy ", style3);
   easy.setShadow(3, 3, 'rgba(0,0,0,0.5)', 5);
   medium = game.add.text((screenWidth / 2 - 50), 155, "Medium ", style3);
@@ -218,12 +218,12 @@ function menu() {
   hard = game.add.text((screenWidth / 2 + 200), 155, "Hard ", style3);
   hard.setShadow(3, 3, 'rgba(0,0,0,0.5)', 5);
 
-  <!--description text of the purpose of the game-->
+  //description text of the purpose of the game
   description = game.add.text((screenWidth / 2 - 320), 250, "Le but du jeu est d'obtenir le meilleur scoreText en détruisant le plus d'asteroids", style4);
   description2 = game.add.text((screenWidth / 2 - 320), 275, "Il y en a une infinité et si ils vous touchent vous perdez", style4);
 
 
-  <!--the animated keys of the menu-->
+  //the animated keys of the menu
   arrow = game.add.sprite((screenWidth / 2 - 325), 330, 'arrow');
   arrow.frame = 0;
   arrow.scale.setTo(0.4, 0.4);
@@ -242,7 +242,7 @@ function menu() {
   echap.animations.add('move', [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1], 15, true);
   echap.animations.play('move');
 
-  <!--ship and missile of the demonstration of the keys-->
+  //ship and missile of the demonstration of the keys
   shipspace = game.add.sprite((screenWidth / 2 - 180), 450, 'ship');
   shipspace.frame = 0;
   shipspace.animations.add('moteur', [0, 1, 2], 10, true);
@@ -263,14 +263,14 @@ function menu() {
   missileMenu.animations.play('tourne');
   missileMenu.scale.setTo(0.30, 0.30);
 
-  <!--explosion that make pauses-->
+  //explosion that make pauses
   explosion4 = game.add.sprite((screenWidth / 2 - 230), 520, 'explosion');
   explosion4.frame = 14;
   explosion4.animations.add('explose', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 0, 1, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 15, true);
   explosion4.animations.play('explose');
   explosion4.scale.setTo(0.60, 0.60);
 
-  <!--pause icon-->
+  //pause icon
   pause = game.add.sprite((screenWidth / 2 - 208), 545, 'pause');
   pause.frame = 0;
   pause.scale.setTo(0.15, 0.15);
@@ -278,7 +278,7 @@ function menu() {
   pause.animations.play('move');
 }
 
-<!--function of the difficulty buttons to set the number and create the asteroids-->
+//function of the difficulty buttons to set the number and create the asteroids
 function playEasy() {
 
 
@@ -306,7 +306,7 @@ function playHard() {
   creerUI();
 }
 
-<!--function to create asteroids-->
+//function to create asteroids
 function createAsteroid() {
 
   var trente2zero = [];
@@ -357,17 +357,17 @@ function createAsteroid() {
 
 function creerUI() {
 
-  <!--var css-->
+  //var css
   var style = {
     font: "20px Arial",
     fill: "#ffffff"
   };
 
-  <!--scoreText on screen-->
+  //scoreText on screen
   scoreText = game.add.text(5, 3, "Score " + playerScore, style);
 }
 
-<!--hide all menu (can't make container invisible) ... ugly -->
+//hide all menu (can't make container invisible) ... ugly 
 function playgame() {
   paused = !paused;
   panel.visible = false;
@@ -390,21 +390,21 @@ function playgame() {
   pause.visible = false;
 }
 
-<!--function  pause-->
+//function  pause
 function pause() {
   paused = !paused;
 }
 
-<!--authorize to launch missile-->
+//authorize to launch missile
 function setMissile() {
   canLaunchMissile = true;
 }
 
-<!--main function to loop the game -->
+//main function to loop the game 
 function update() {
 
 
-  <!--move the ships and missiles from the menu while the game is paused-->
+  //move the ships and missiles from the menu while the game is paused
   if (arrow.frame == 1) {
     shiparrow.x--;
   }
@@ -417,7 +417,7 @@ function update() {
   missileMenu.x++;
 
 
-  <!--loop of the game if he is not on break-->
+  //loop of the game if he is not on break
   if (!paused) {
 
 
@@ -458,13 +458,13 @@ function update() {
 
     }
 
-    <!--check for collisions-->
+    //check for collisions
     game.physics.arcade.overlap(asteroid, missiles, collisionmissile, null, this);
     game.physics.arcade.overlap(ship, asteroid, collisionship, null, this);
     game.physics.arcade.overlap(ship2, asteroid, collisionship, null, this);
 
 
-    <!--move the green background (planet)-->
+    //move the green background (planet)
     if (montagne.x > -2400) {
       montagne.x--;
     } else {
@@ -478,7 +478,7 @@ function update() {
     }
 
 
-    <!--if the ship is not dead, we can move it-->
+    //if the ship is not dead, we can move it
     if (!isShipDestroyed) {
       if (upKey.isDown) {
         if (ship.y > 3) {
@@ -508,9 +508,9 @@ function update() {
 
   }
 
-  <!-- if a missile collides with an asteroid, we go out -->
+  // if a missile collides with an asteroid, we go out 
 
-  <!--the asteroid of the screen destroys the missile and puts the explosion on impact-->
+  //the asteroid of the screen destroys the missile and puts the explosion on impact
   function collisionmissile(asteroid, missile) {
 
     playerScore++;
@@ -525,7 +525,7 @@ function update() {
     asteroid.y = screenWidth;
   }
 
-  <!--if the ship collides with an asteroid, we put the explosions on the ship-->
+  //if the ship collides with an asteroid, we put the explosions on the ship
   function collisionship(ship, asteroid) {
 
     isShipDestroyed = true;
@@ -540,14 +540,14 @@ function update() {
     explosion3.y = ship.y + 10;
 
 
-    <!--reload the page after 3 sec-->
+    //reload the page after 3 sec
     game.time.events.add(Phaser.Timer.SECOND * 3, restart, this);
 
 
   }
 }
 
-<!--we pause the game to avoid the bugs and reload the page-->
+//we pause the game to avoid the bugs and reload the page
 function restart() {
   game.paused = true;
   location.reload();

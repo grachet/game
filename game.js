@@ -219,8 +219,8 @@ function menu() {
   hard.setShadow(3, 3, 'rgba(0,0,0,0.5)', 5);
 
   //description text of the purpose of the game
-  description = game.add.text((screenWidth / 2 - 320), 250, "Le but du jeu est d'obtenir le meilleur scoreText en détruisant le plus d'asteroids", style4);
-  description2 = game.add.text((screenWidth / 2 - 320), 275, "Il y en a une infinité et si ils vous touchent vous perdez", style4);
+  description = game.add.text((screenWidth / 2 - 320), 250, "Get the highest score by destroying the most asteroids", style4);
+  description2 = game.add.text((screenWidth / 2 - 320), 275, "There are endless of them and if they hit you you lose", style4);
 
 
   //the animated keys of the menu
